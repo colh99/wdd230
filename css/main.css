@@ -3,14 +3,21 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 header, footer {
-    background-color:rgb(67, 141, 67);
-    border: 5px solid black;   
-    display: flex;
+    background-color: #00a870;
+       
+    display: block;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+    border-radius: 1.5em;
+    box-shadow: 2px 2px 6px black;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.70);
 }
 
 header, footer, main {
@@ -21,9 +28,38 @@ header, footer, main {
 
 header {
     display: flex;
+    padding: 1.5em;
+}
+
+header h1 {
+    margin: 0em 2em 0em 2em;
+}
+
+ul {
+    margin-left: 3em;
+}
+
+#footer1{
+    font-size: 1.2em;
+}
+
+#footer2 {
+    font-size: 1em;
+    color: yellow;
+}
+
+hr {
+    margin: 1em;
 }
 
 #profile-pic {
     width: 150;
     height: auto;
+    margin: 0px 15px 0px 15px;
+    box-shadow: 2px 2px 6px black;
+}
+
+#note {
+    font-style: italic;
+    font-size: 0.9em;
 }
