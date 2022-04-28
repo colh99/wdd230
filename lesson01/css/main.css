@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     letter-spacing: 1px;
 }
@@ -24,6 +23,7 @@ header, footer, main {
     max-width: 36rem; /* 16px * 36 = 576 */
     margin: 0 auto;
     padding: 2em;
+    font-family: 'Lora', serif;
 }
 
 header {
@@ -35,8 +35,17 @@ header h1 {
     margin: 0em 2em 0em 2em;
 }
 
-ul {
+main {
+    font-family: sans-serif;
+}
+
+main h2{
+    font-family: 'Lora', serif;
+}
+
+main ul {
     margin-left: 3em;
+    font-size: large;
 }
 
 #footer1{
@@ -56,10 +65,9 @@ hr {
     width: 150px;
     height: auto;
     margin: 0px 15px 0px 15px;
-    box-shadow: 2px 2px 6px black;
+    box-shadow: 2px 2px 8px black;
 }
 
 #note {
     font-style: italic;
-    font-size: 0.9em;
 }
