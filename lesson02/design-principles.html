@@ -1,58 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content = "Colby Hale">
-    <meta name = "description" content = "Examples and explanations of web design principles.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Colby Hale" />
+    <meta
+      name="description"
+      content="Examples and explanations of web design principles."
+    />
     <title>Design Principles</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/02-main.css">
-</head>
-<body>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/02-main.css" />
+    <link
+      rel="stylesheet"
+      href="css/02-medium.css"
+      media="(min-width: 880px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/02-large.css"
+      media="(min-width: 1300px)"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Design Principles Document</h1>
-        <h2>Colby Hale</h2>
+      <h1>Design Principles Document</h1>
+      <h2>Colby Hale</h2>
     </header>
 
     <main>
-        <div>
-            <h2>Principle 1</h2>
-            <p>Company/Organization Name</p>
-            <p>Website Address</p>
-            <img src="" alt="page screenshot" width="300" height="200">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aspernatur totam 
-                blanditiis dignissimos praesentium provident vitae reiciendis! Sapiente nulla temporibus, 
-                quisquam consequuntur error ut cumque natus? Officia architecto maxime reiciendis!</p>
+      <article>
+        <h2>PARC: Contrast</h2>
+        <div class="article-content">
+          <p>Hello Games</p>
+          <p><a href="https://www.nomanssky.com/">nomanssky.com</a></p>
+          <img src="images/no-mans-sky-website.png" alt="page screenshot" width="300px" height="619px"/>
+          <p>
+            The website for the video game No Man's Sky exemplifies how to use
+            contrast to draw the user's eyes. The dark background makes the
+            game's artwork and screenshots pop out. It also allows for strong
+            readability. Additionally, despite their small size, you will almost
+            immediately notice the bright orange colored buttons that link you
+            to places to purchase the game.
+          </p>
         </div>
+      </article>
 
-        <div>
-            <h2>Principle 2</h2>
-            <p>Company/Organization Name</p>
-            <p>Website Address</p>
-            <img src="" alt="page screenshot" width="300" height="200">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aspernatur totam 
-                blanditiis dignissimos praesentium provident vitae reiciendis! Sapiente nulla temporibus, 
-                quisquam consequuntur error ut cumque natus? Officia architecto maxime reiciendis!</p>
+      <article>
+        <h2>White Space, Clean Design</h2>
+        <div class="article-content">
+          <p>Tesla</p>
+          <p><a href="https://www.tesla.com/">tesla.com</a></p>
+          <img src="images/tesla-website.png" alt="page screenshot" width="300px" height="619px"/>
+          <p>
+            Tesla's website is a great example of White Space and Clean Design.
+            In this case, the photos used are very important: they are simple
+            and clean, which helps round out the whole design. In turn, the
+            design leaves an impression that the product is also clean and
+            stylish. The user is given straightforward options, and the product 
+            is the primary focus.
+          </p>
         </div>
+      </article>
 
-        <div>
-            <h2>Principle 3</h2>
-            <p>Company/Organization Name</p>
-            <p>Website Address</p>
-            <img src="" alt="page screenshot" width="300" height="200">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aspernatur totam 
-                blanditiis dignissimos praesentium provident vitae reiciendis! Sapiente nulla temporibus, 
-                quisquam consequuntur error ut cumque natus? Officia architecto maxime reiciendis!</p>
+      <article>
+        <h2>Visual Hierarchy</h2>
+        <div class="article-content">
+          <p>Spotify</p>
+          <p><a href="https://www.spotify.com/">spotify.com</a></p>
+          <img src="images/spotify-website.png" alt="page screenshot" width="300px" height="619px"/>
+          <p>
+            If you want your customers to take the path you want, you need to
+            make the path obvious. Spotify does this by putting a single button
+            at the front and center of their home page, with an attractive
+            offer. They understand that they have extensive brand recognition,
+            so they don't waste time explaining who they are. Instead, they jump
+            straight to business.
+          </p>
         </div>
+      </article>
     </main>
 
     <footer>
-        <p>&copy; <span id="copyrightyear"></span> .:|:. Colby Hale .:|:. Idaho</p>
-        <p>Last modified: <span id="lastmod"></span></p>
+      <p>
+        &copy; <span id="copyrightyear"></span> .:|:. Colby Hale .:|:. Idaho
+      </p>
+      <p>Last modified: <span id="lastmod"></span></p>
     </footer>
 
     <script src="js/02-script.js"></script>
-</body>
+  </body>
 </html>

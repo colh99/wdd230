@@ -1,19 +1,19 @@
-@media only screen and (max-width: 36em) {
-    #profile-pic {
-        position: flex;
-    } 
-    header {
-        display: block;
-        padding: 1em;
-    }
-    header, footer {
-        border-radius: 0px;
-        box-shadow: 0px 2px 6px black;
-    }
-    main li {
-        font-size: larger;
-    }
-    main, p {
-        font-size: large;
-    }
+#profile-pic {
+  position: flex;
+}
+header {
+  display: block;
+  padding: 1em;
+}
+header,
+footer {
+  border-radius: 0px;
+  box-shadow: 0px 2px 6px black;
+}
+main li {
+  font-size: larger;
+}
+main,
+p {
+  font-size: large;
 }
