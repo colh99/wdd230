@@ -8,11 +8,14 @@
 header {
     background-color: #4d4d4d;
     color: white;
+    font-family: 'Orbitron', sans-serif;
 }
 
 h1 {
     text-align: center;
     padding: 2em;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
 }
 
 .flex-nav ul {
@@ -31,6 +34,8 @@ h1 {
     color: white;
     background-color: #ff8c00;
     font-size: 1.3em;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
 }
 
 .flex-nav a:hover {
@@ -41,20 +46,6 @@ h1 {
 .flex-nav li {
     flex: 1 1 auto;
     width: 100%;
-}
-
-@media screen and (min-width: 46rem) {
-    .flex-nav ul {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-
-@media screen and (min-width: 76rem) {
-    main {
-        margin: 0em 12em 0em 12em;
-        max-width: 80%;
-    }
 }
 
 main {
@@ -72,6 +63,7 @@ main img {
 
 p {
     font-size: 20px;
+    margin: 0.5em 0em 0.5em 0em;
 }
 
 #section1 {
@@ -82,8 +74,10 @@ section {
     padding: 1em 2em 1em 2em;
 }
 
-section h2 {
+h2 {
     padding-bottom: 0.5em;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
 }
 
 .personas {
@@ -124,4 +118,22 @@ footer {
     color: white;
     height: 8em;
     text-align: center;
+}
+
+footer p {
+    font-family: 'Orbitron', sans-serif;
+}
+
+@media screen and (min-width: 46rem) {
+    .flex-nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 76rem) {
+    main {
+        margin: 0em 12em 0em 12em;
+        max-width: 80%;
+    }
 }
