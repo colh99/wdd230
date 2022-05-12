@@ -95,6 +95,26 @@ section h2 {
     max-width: 30em;
 }
 
+#color-section {
+    margin: auto;
+}
+
+#colors {
+    margin: auto;
+}
+
+#colors td {
+    padding: 0.5em;
+    width: 20em;
+    border: 1px solid black;
+}
+
+#colors .palette {
+    font-weight: bold;
+    padding: 3em;
+    color: white;
+}
+
 footer {
     display: flex;
     flex-direction: column;
