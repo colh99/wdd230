@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Use Grid? Or check tutorial*/
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    background-color: #ff8c00;
+}
+
+nav a {
+    display: block;
+    padding: .5em .1em;
+    text-decoration: none;
+    color: white;
+    background-color: #ff8c00;
+    font-size: 1.3em;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+nav li {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+h2 {
+    padding-bottom: 0.5em;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+main {
+    margin: auto;
+    line-height: 1.5em;
+}
+
+footer p {
+    font-family: 'Orbitron', sans-serif;
+}
