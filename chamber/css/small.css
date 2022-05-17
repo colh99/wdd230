@@ -17,41 +17,61 @@ header {
     font-family: 'Orbitron', sans-serif;
 }
 
-/* Use Grid? Or check tutorial*/
-nav {
+#top-header {
+    padding: 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+nav {
+    background-color: #ff8c00;
+}
+
+/* Hamburger Button Closed */
+#hamburgerBtn span:nth-child(1) {display: block; font-size: 1.4em;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+/* Hamburger Button Opened */
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block; font-size: 1.575em;}
+
 nav ul {
-    display: flex;
-    flex-direction: column;
+    display: none;
+    padding: 0;
+    margin: 0;
     list-style-type: none;
-    align-items: center;
     text-align: center;
     background-color: #ff8c00;
 }
 
+nav ul.open {
+    display: block;
+}
+
 nav a {
     display: block;
-    padding: .5em .1em;
+    padding: .8rem 2vw;
     text-decoration: none;
     color: white;
     background-color: #ff8c00;
     font-size: 1.3em;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
+    border-top: 1px solid #4d4d4d;
 }
 
 nav a:hover {
     background-color: black;
     color: white;
-}
-
-nav li {
-    flex: 1 1 auto;
-    width: 100%;
 }
 
 h1 {
