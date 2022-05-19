@@ -32,6 +32,13 @@ p {
     font-family: 'Work Sans', sans-serif;
 }
 
+hr {
+    width: 80%;
+    color: #FFD199;
+}
+
+/* Header and Nav */
+
 header {
     background-color: #4d4d4d;
     color: white;
@@ -98,6 +105,12 @@ nav a:hover {
     color: white;
 }
 
+/* Main */
+
+main h2 {
+    color: #ff8c00;
+}
+
 .home-grid {
     padding: 1em;
     display: grid;
@@ -108,6 +121,7 @@ nav a:hover {
     border: 1px solid #4d4d4d;
     min-height: 300px;
     padding: 1em;
+    background-color: #ffdeb6;
 }
 
 #spotlights {
@@ -121,7 +135,55 @@ nav a:hover {
     padding: 1em;
 }
 
+/* Footer */
+
 footer {
     background-color: #4d4d4d;
     color: white;
+    padding: 0;
+}
+
+#footer-top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1em;
+}
+
+#main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#misc-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+}
+
+#footer-bottom .separator {
+    display: none;
+}
+
+footer hr {
+    border-color: #ffdeb6;
+    margin: auto;
+}
+
+.address {
+    font-style: italic;
+}
+
+#my-name {
+    font-weight: bold;
 }

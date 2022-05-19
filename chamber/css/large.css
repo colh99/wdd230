@@ -8,4 +8,24 @@
         display: block;
         border: 1px solid black;
     }
+
+    #footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #footer-bottom {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+    
+    #footer-bottom .separator {
+        display: block;
+    }
+
+    footer hr {
+        display: none;
+    }
 }
