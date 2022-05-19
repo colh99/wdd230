@@ -3,12 +3,33 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
+    line-height: 1.5em;
 }
 
 body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+h2 {
+    padding-bottom: 0.5em;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
 }
 
 header {
@@ -18,10 +39,13 @@ header {
 }
 
 #top-header {
-    padding: 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+#nav-logo {
+    justify-content: center;
 }
 
 nav button {
@@ -37,12 +61,12 @@ nav {
 }
 
 /* Hamburger Button Closed */
-#hamburgerBtn span:nth-child(1) {display: block; font-size: 1.4em;}
+#hamburgerBtn span:nth-child(1) {display: block; font-size: 1.2em;}
 #hamburgerBtn span:nth-child(2) {display: none;}
 
 /* Hamburger Button Opened */
 #hamburgerBtn.open span:nth-child(1) {display: none;}
-#hamburgerBtn.open span:nth-child(2) {display: block; font-size: 1.575em;}
+#hamburgerBtn.open span:nth-child(2) {display: block; font-size: 1.2em;}
 
 nav ul {
     display: none;
@@ -74,22 +98,30 @@ nav a:hover {
     color: white;
 }
 
-h1 {
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2px;
+.home-grid {
+    padding: 1em;
+    display: grid;
+    gap: 1em;
 }
 
-h2 {
-    padding-bottom: 0.5em;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 1px;
+.home-grid-section {
+    border: 1px solid #4d4d4d;
+    min-height: 300px;
+    padding: 1em;
 }
 
-main {
-    margin: auto;
-    line-height: 1.5em;
+#spotlights {
+    border: 1px solid #4d4d4d;
+    min-height: 600px;
 }
 
-footer p {
-    font-family: 'Orbitron', sans-serif;
+.spotlight-item {
+    border: 1px solid #4d4d4d;
+    min-height: 300px;
+    padding: 1em;
+}
+
+footer {
+    background-color: #4d4d4d;
+    color: white;
 }
