@@ -1,7 +1,59 @@
 @media only screen and (min-width: 64rem) {
 
+    #top-header {
+        width: 80%;
+        margin: auto;
+    }
+
+    #top-text {
+        padding-left: 1em;
+    }
+
+    nav ul#primaryNav {
+        display: flex;
+        margin-left: 11vw;
+    }
+
     nav ul li a {
         padding: .5rem 1rem;
+    }
+
+    .home-grid {
+        margin: auto;
+        width: 90%;
+        grid-template-areas:
+        'event hero hero spotlights'
+        'weather hero hero spotlights'
+        'join news news spotlights';
+    }
+
+    .home-grid-section {
+        min-width: 225px;
+    }
+
+    #hero {
+        grid-area: hero;
+        min-width: 450px;
+    }
+
+    #event {
+        grid-area: event;
+    }
+
+    #weather {
+        grid-area: weather;
+    }
+
+    #news {
+        grid-area: news;
+    }
+
+    #spotlights {
+        grid-area: spotlights;
+    }
+
+    #join {
+        grid-area: join;
     }
 
     #spotlight3 {
@@ -11,7 +63,8 @@
 
     #footer-top {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 1.5em;
     }
 
     #footer-bottom {
@@ -23,9 +76,5 @@
     
     #footer-bottom .separator {
         display: block;
-    }
-
-    footer hr {
-        display: none;
     }
 }
