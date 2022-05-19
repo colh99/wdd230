@@ -105,6 +105,16 @@ nav a:hover {
     color: white;
 }
 
+#todays-date {
+    margin: 1em auto 1em auto;
+    padding: 0.25em;
+    text-align: center;
+    width: 80%;
+    color: black;
+    background-color: #ffdeb6;
+    border: 1px solid #ff8c00;
+}
+
 /* Main */
 
 main h2 {
@@ -118,21 +128,28 @@ main h2 {
 }
 
 .home-grid-section {
-    border: 1px solid #4d4d4d;
+    border: 2px solid #ff8c00;
     min-height: 300px;
     padding: 1em;
     background-color: #ffdeb6;
 }
 
+#join {
+    display: none;
+}
+
 #spotlights {
-    border: 1px solid #4d4d4d;
-    min-height: 600px;
+    min-height: fit-content;
 }
 
 .spotlight-item {
     border: 1px solid #4d4d4d;
     min-height: 300px;
     padding: 1em;
+}
+
+#spotlight3 {
+    display: none;
 }
 
 /* Footer */
@@ -176,7 +193,7 @@ footer {
 }
 
 footer hr {
-    border-color: #ffdeb6;
+    border-color: #ff8c00;
     margin: auto;
 }
 
