@@ -51,6 +51,11 @@ header {
     flex-wrap: wrap;
 }
 
+#social-media {
+    position: absolute;
+    margin: 0.5em 1em 0 75%;
+}
+
 #nav-logo {
     justify-content: center;
 }
@@ -106,7 +111,7 @@ nav a:hover {
 }
 
 #todays-date {
-    margin: 1em auto 1em auto;
+    margin: 1.5em auto 1em auto;
     padding: 0.25em;
     text-align: center;
     width: 80%;
