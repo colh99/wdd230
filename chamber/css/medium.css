@@ -4,6 +4,10 @@
         padding: 1em;
     }
 
+    #top-text {
+        padding-left: 1em;
+    }
+
     nav button {
         display:none;
     }
