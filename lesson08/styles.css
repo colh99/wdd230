@@ -1,0 +1,50 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px #00367e;
+}
+
+th {
+    letter-spacing: 1px;
+}
+
+th, td {
+    border: 1px solid #00367e;
+    padding: 0.3em 0.5em;
+    text-align: center;
+}
+
+th, .highlight {
+    background-color: #2367be;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #c3deff;
+}
+
+#table-title {
+    font-size: 1.5em;
+    color: white;
+}
+
+#table-title, tfoot td {
+    background-color: #00367e;
+    padding: 6px;
+}
+
+tfoot td {
+    font-size: 0.7em;
+    color: white;
+}
+
+#black-friday {
+    font-style: italic;
+}
