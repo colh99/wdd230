@@ -117,13 +117,31 @@ nav a:hover {
     width: 90%;
     color: white;
     background-color: #686868;
-    border: 2px solid #ff8c00;
+    border: 3px solid #ff8c00;
 }
 
 /* Main */
 
-main h2 {
-    color: #4d4d4d;
+#message-banner {
+    background-color: #ffdeb6;
+    border: 2px solid #ff8c00;
+    display: none;
+}
+
+#message-banner p {
+    text-align: center;
+    vertical-align: center;
+    padding: 0.5em;
+}
+
+.home-grid h2 {
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px #ff8c00;
+}
+
+.home-grid p {
+    font-size: 1.2em;
 }
 
 .home-grid {
@@ -133,9 +151,17 @@ main h2 {
 }
 
 .home-grid-section {
-    border: 2px solid #ff8c00;
+    border: 3px solid #ff8c00;
     min-height: 300px;
     background-color: #ffdeb6;
+    padding: 1em;
+}
+
+.home-grid-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 #join {
@@ -148,7 +174,7 @@ main h2 {
 }
 
 .spotlight-item {
-    border: 1px solid #4d4d4d;
+    border: 3px solid #ff8c00;
     min-height: 300px;
     padding: 1em;
 }

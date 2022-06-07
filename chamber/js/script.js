@@ -25,3 +25,10 @@ document.querySelector("#copyrightyear").textContent = todaysdate.getFullYear();
 // Sets the last modified to the current time and date
 document.querySelector("#lastmod").textContent = document.lastModified;
 
+// Only display message banner on Monday or Tuesday
+dayOfWeek = todaysdate.getDay();
+messageBanner = document.getElementById("message-banner");
+
+if (dayOfWeek == 1 || dayOfWeek == 2) {
+    messageBanner.style.display = "block";
+}
