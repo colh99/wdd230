@@ -12,7 +12,12 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-h1 {
+a {
+    color: #ff8c00;
+    text-shadow: 1px 1px 1px black;
+}
+
+h1, h3 {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
 }
@@ -23,18 +28,13 @@ h2 {
     letter-spacing: 2px;
 }
 
-h3 {
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2px;
-}
-
 p {
     font-family: 'Work Sans', sans-serif;
 }
 
 hr {
-    width: 80%;
-    color: #FFD199;
+    border: 1px solid #ff8c00;
+    margin: auto;
 }
 
 /* Header and Nav */
@@ -49,6 +49,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-shadow: 4px 4px 8px #00000050;
 }
 
 #social-media {
@@ -123,8 +124,9 @@ nav a:hover {
 /* Main */
 
 #message-banner {
-    background-color: #ffdeb6;
-    border: 2px solid #ff8c00;
+    background-color: #ffdfd8;
+    border-top: 2px solid #ff8c00;
+    border-bottom: 2px solid #ff8c00;
     display: none;
 }
 
@@ -152,9 +154,10 @@ nav a:hover {
 
 .home-grid-section {
     border: 3px solid #ff8c00;
-    min-height: 300px;
-    background-color: #ffdeb6;
+    max-height: fit-content;
+    background-color: #ffdfd8;
     padding: 1em;
+    box-shadow: 5px 5px 8px #4d4d4d6b;
 }
 
 .home-grid-section img {
@@ -164,8 +167,37 @@ nav a:hover {
     margin: auto;
 }
 
+#event p {
+    font-size: 1.5em;
+}
+
 #join {
     display: none;
+}
+
+#join-button {
+    display: block;
+    margin: auto auto 2em auto;
+    text-align: center;
+    font-size: 1.75em;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    background-color: #4d4d4d;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #ff8c00;
+    padding: 0.5em;
+    box-shadow: 3px 3px 8px #4d4d4d;
+}
+
+#join-button:hover {
+    background-color: black;
+}
+
+#join p {
+    font-size: 1.5em;
+    text-align: center;
 }
 
 #spotlights {
@@ -192,12 +224,8 @@ nav a:hover {
 p.spotlight-contact {
     font-size: 1em;
     font-style: normal;
-    padding: 0.5em;
-}
+    padding-top: 0.5em;
 
-.spotlight-text hr {
-    border: 1px solid #ff8c00;
-    margin: auto;
 }
 
 #hero.home-grid-section {
@@ -207,10 +235,13 @@ p.spotlight-contact {
 
 #hero-welcome {
     position: absolute;
-    top: 0.5em;
-    left: 1em;
-    font-size: 2.5em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 2em;
     z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 #hero-join {
@@ -219,15 +250,19 @@ p.spotlight-contact {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
     position: absolute;
-    bottom: 50px;
-    right: 50px;
-    padding: 1.5rem;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     z-index: 1;
     background-color: #4d4d4d;
     color: white;
     border-radius: 20px;
     border: 2px solid #ff8c00;
     padding: 0.5em;
+    box-shadow: 3px 3px 8px #ff8c00;
+    text-align: center;
+    width: fit-content;
 }
 
 #hero-join:hover {
@@ -238,6 +273,34 @@ p.spotlight-contact {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#weather {
+    text-align: center;
+}
+
+#weather div {
+    display: block;
+    text-align: center;
+}
+
+#weather-image {
+    display: inline;
+}
+
+#weather div p {
+    display: inline;
+    position: relative;
+    bottom: 10px;
+    font-size: 2em;
+}
+
+#weather div #weather-condition {
+    font-size: 1.5em;
+}
+
+#weather hr {
+    margin: 1em 0 1em 0;
 }
 
 /* Footer */
@@ -278,11 +341,6 @@ footer {
 
 #footer-bottom .separator {
     display: none;
-}
-
-footer hr {
-    border-color: #ff8c00;
-    margin: auto;
 }
 
 .address {
