@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+#image-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image-collection img {
+    border: 1px solid black;
+    margin: 1em;
+}
+
+#image-collection img[data-src] {
+    filter: blur(0.2em);
+}
+  
+#image-collection img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+  
