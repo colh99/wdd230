@@ -136,6 +136,8 @@ nav a:hover {
     padding: 0.5em;
 }
 
+/* Home Page */
+
 .home-grid h2 {
     color: black;
     text-align: center;
@@ -303,6 +305,35 @@ p.spotlight-contact {
     margin: 1em 0 1em 0;
 }
 
+/* Discover Page */
+
+#image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#image-gallery img[data-src] {
+    filter: blur(0.6em);
+}
+  
+#image-gallery img {
+    margin: 1em auto 0 auto;
+    box-shadow: 2px 2px 4px #4d4d4d;
+    filter: blur(0em);
+    transition: filter 1s;
+    transition: 1s;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.gallery-caption {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
 /* Footer */
 
 footer {
@@ -350,3 +381,4 @@ footer {
 #my-name {
     font-weight: bold;
 }
+

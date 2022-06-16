@@ -1,4 +1,4 @@
-// Hamburger Menu
+// HAMBURGER MENU
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
@@ -7,6 +7,7 @@ function toggleMenu() {
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
+// DATE AND TIME
 // Get a date object to use
 const todaysdate = new Date();
 
@@ -31,4 +32,31 @@ messageBanner = document.getElementById("message-banner");
 
 if (dayOfWeek == 1 || dayOfWeek == 2) {
     messageBanner.style.display = "block";
+}
+
+// LAZY LOADING
+let imagesToLoad = document.querySelectorAll("img[data-src]");
+const loadImages = (image) => {
+    image.setAttribute("src", image.getAttribute("data-src"));
+    image.onload = () => {
+        image.removeAttribute("data-src");
+    };
+};
+
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    });
+    imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+} else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
 }

@@ -1,5 +1,7 @@
 @media only screen and (min-width: 35rem) {
 
+    /* Header and Nav */
+
     #top-header {
         padding: 1em;
     }
@@ -23,8 +25,9 @@
         border-right: 1px solid #4d4d4d;
     }
 
+    /* Main */
+    /* Home Page */
 
-    /* Hero image text and button */
     #hero-welcome {
         position: absolute;
         top: 0.5em;
@@ -33,7 +36,8 @@
         font-size: 2.5em;
         z-index: 1;
     }
-    
+
+    /* Button */
     #hero-join {
         font-size: 1.5em;
         text-decoration: none;
@@ -87,6 +91,34 @@
         grid-column: 1 / 6;
         order: 4;
     }
+
+/* Discover Page */
+
+    #image-gallery img:hover {
+        box-shadow: 5px 5px 10px #4d4d4d;
+        transform: scale(1.02);
+        transition: 0.3s;
+    }
+
+    #image-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        justify-items: center;
+        max-width: 700px;
+        margin: auto;
+    }
+    
+    #picture3 {
+        grid-column: 1/-1;
+    }
+    
+    #picture6 {
+        grid-column: 1/-1;
+    }
+
+    /* Footer */
 
     footer {
         padding: 1em;
