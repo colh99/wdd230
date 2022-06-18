@@ -375,13 +375,13 @@ p.spotlight-contact {
 }
 
 .pop-out-box {
-    border: 3px solid #ff8c00;
     max-height: fit-content;
     background-color: #ffdfd8;
     padding: 1em;
-    box-shadow: 5px 5px 8px #4d4d4d6b;
+    box-shadow: 3px 3px 8px #4d4d4d;
     width: fit-content;
-    margin: 2em 1em 0 1em;
+    margin: 1em auto 0 auto;
+    
 }
 
 .pop-out-box h3 {
