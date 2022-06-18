@@ -65,6 +65,12 @@
         display: block;
     }
 
+    /* Discover Page */
+
+    .discover-main {
+        width: 60%;
+    }
+
     /* Footer */
 
     #footer-top {

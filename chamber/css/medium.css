@@ -94,13 +94,27 @@
 
 /* Discover Page */
 
-    #image-gallery img:hover {
+    .discover-main {
+        width: 80%;
+        padding: 1em;
+        margin: 2em auto 2em auto;
+    }
+
+    #discover-stats {
+        text-align: left;
+    }
+
+    #discover-stats h3 {
+        text-align: left;
+    }
+
+    #discover-gallery-images img:hover {
         box-shadow: 5px 5px 10px #4d4d4d;
         transform: scale(1.02);
         transition: 0.3s;
     }
 
-    #image-gallery {
+    #discover-gallery-images {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;

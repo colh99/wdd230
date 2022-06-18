@@ -10,6 +10,11 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-color: white;
+}
+
+main {
+    margin: 1em;
 }
 
 a {
@@ -28,8 +33,18 @@ h2 {
     letter-spacing: 2px;
 }
 
+main h2 {
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px #ff8c00;
+}
+
 p {
     font-family: 'Work Sans', sans-serif;
+}
+
+main p {
+    font-size: 1.2em;
 }
 
 hr {
@@ -138,16 +153,6 @@ nav a:hover {
 
 /* Home Page */
 
-.home-grid h2 {
-    color: black;
-    text-align: center;
-    text-shadow: 2px 2px #ff8c00;
-}
-
-.home-grid p {
-    font-size: 1.2em;
-}
-
 .home-grid {
     padding: 1em;
     display: grid;
@@ -233,6 +238,7 @@ p.spotlight-contact {
 #hero.home-grid-section {
     padding: 0;
     position: relative;
+    min-height: 400px;
 }
 
 #hero-welcome {
@@ -307,18 +313,52 @@ p.spotlight-contact {
 
 /* Discover Page */
 
-#image-gallery {
+.discover-main {
+    background-color: #ffdfd8;
+    width: fit-content;
+    box-shadow: 5px 5px 8px #4d4d4d6b;
+    margin: 1em;
+    border: 3px solid #ff8c00;
+}
+
+.discover-main h2 {
+    padding: 0;
+    text-align: center;
+}
+
+.discover-main h3 {
+    padding: 2em 0 0.5em 0;
+}
+
+#discover-stats h2, h3 {
+    text-align: center;
+}
+
+#facts p, #demographics p{
+    margin-left: 1em;
+}
+
+#discover-gallery h2 {
+    text-align: center;
+    padding: 2em 0 0.5em 0;
+}    
+
+#discover-gallery-images {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    padding-bottom: 2em;
 }
 
-#image-gallery img[data-src] {
+#discover-gallery-images img[data-src] {
     filter: blur(0.6em);
 }
   
-#image-gallery img {
+#discover-gallery-images picture {
+    margin: auto;
+}
+
+#discover-gallery-images img {
     margin: 1em auto 0 auto;
     box-shadow: 2px 2px 4px #4d4d4d;
     filter: blur(0em);
@@ -332,6 +372,21 @@ p.spotlight-contact {
 .gallery-caption {
     text-align: center;
     padding-bottom: 15px;
+}
+
+.pop-out-box {
+    border: 3px solid #ff8c00;
+    max-height: fit-content;
+    background-color: #ffdfd8;
+    padding: 1em;
+    box-shadow: 5px 5px 8px #4d4d4d6b;
+    width: fit-content;
+    margin: 2em 1em 0 1em;
+}
+
+.pop-out-box h3 {
+    padding: 0;
+    text-align: center;
 }
 
 /* Footer */
