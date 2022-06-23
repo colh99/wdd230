@@ -311,32 +311,54 @@ p.spotlight-contact {
     margin: 1em 0 1em 0;
 }
 
-/* Discover Page */
 
-.discover-main {
+/* Page Main Content */
+
+.content-main {
     background-color: #ffdfd8;
     width: fit-content;
     box-shadow: 5px 5px 8px #4d4d4d6b;
-    margin: 1em;
+    margin: 1em auto 1em auto;
+    padding: 1em;
     border: 3px solid #ff8c00;
 }
 
-.discover-main h2 {
+.content-main h2 {
     padding: 0;
     text-align: center;
 }
 
-.discover-main h3 {
+.content-main h3 {
     padding: 2em 0 0.5em 0;
 }
 
-#discover-stats h2, h3 {
+.content-main h2, .content-main h3 {
     text-align: center;
 }
 
-#facts p, #demographics p{
+.content-main p {
     margin-left: 1em;
 }
+
+/* Pop-out Boxes */
+
+.pop-out-box {
+    max-height: fit-content;
+    background-color: #ffdfd8;
+    padding: 1em;
+    box-shadow: 3px 3px 8px #4d4d4d;
+    width: fit-content;
+    margin: 1em auto 0 auto;
+    
+}
+
+.pop-out-box h3 {
+    padding: 0;
+    text-align: center;
+    text-shadow: 2px 2px #ff8c00;
+}
+
+/* Discover Page */
 
 #discover-gallery h2 {
     text-align: center;
@@ -374,19 +396,11 @@ p.spotlight-contact {
     padding-bottom: 15px;
 }
 
-.pop-out-box {
-    max-height: fit-content;
-    background-color: #ffdfd8;
-    padding: 1em;
-    box-shadow: 3px 3px 8px #4d4d4d;
-    width: fit-content;
-    margin: 1em auto 0 auto;
-    
-}
+/* Thank you page */
 
-.pop-out-box h3 {
-    padding: 0;
+#successful-submit-message {
     text-align: center;
+    margin: 1em 0 1em 0;
 }
 
 /* Footer */
@@ -402,6 +416,7 @@ footer {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    text-align: center;
     padding: 1em;
 }
 

@@ -92,21 +92,23 @@
         order: 4;
     }
 
-/* Discover Page */
+    /* Page Main Content */
 
-    .discover-main {
+    .content-main {
         width: 80%;
         padding: 1em;
         margin: 2em auto 2em auto;
     }
 
-    #discover-stats {
+    .content-main p {
         text-align: left;
     }
 
-    #discover-stats h3 {
+    .content-main h3 {
         text-align: left;
     }
+    
+    /* Discover Page */
 
     #discover-gallery-images img:hover {
         box-shadow: 5px 5px 10px #4d4d4d;
