@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content = "Colby Hale">
-    <meta name = "description" content = "A project for WDD 230, Web Frontend Development I. The official website for the Cloud City Chamber of Commerce.">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Colby Hale" />
+    <meta name="description"
+        content="A project for WDD 230, Web Frontend Development I. The official website for the Cloud City Chamber of Commerce." />
     <title>Cloud City Commerce</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/small.css"/>
-    <link rel="stylesheet" href="css/medium.css"/>
-    <link rel="stylesheet" href="css/large.css"/>
-    <link rel="shortcut icon" href="images/favicon2.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Work+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="images/favicon2.ico" />
 </head>
+
 <body>
     <header>
-        <div id="top-header"> 
-            <div id="nav-logo"><a href="index.html"><img src="images/chamberlogosmall.webp" alt="Navigation logo" width="100" height="83"></a></div>
+        <div id="top-header">
+            <div id="nav-logo">
+                <a href="index.html"><img src="images/chamberlogosmall.webp" alt="Navigation logo" width="100"
+                        height="83" /></a>
+            </div>
             <div id="top-text">
                 <h1>Cloud City</h1>
                 <h2>Chamber of Commerce</h2>
             </div>
             <div id="social-media">
-                <a href=""><img src="images/social-facebook.webp" alt="facebook link" width="40" height="40"></a>
-                <a href=""><img src="images/social-linkedin.webp" alt="linkedin link" width="40" height="40"></a>
+                <a href=""><img src="images/social-facebook.webp" alt="facebook link" width="40" height="40" /></a>
+                <a href=""><img src="images/social-linkedin.webp" alt="linkedin link" width="40" height="40" /></a>
             </div>
         </div>
         <nav>
@@ -39,22 +45,80 @@
         </nav>
         <div id="todays-date">Today, 1 January 1970</div>
     </header>
-    <div id="message-banner"><p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+    <div id="message-banner">
+        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
     <main class="content-main">
+        <h2>Join Us!</h2>
+        <p>Please fill out the form below. After it is successfully submitted, a representative will reach out to you.</p>
 
+        <form method="get" action="thankyou.html">
+            <label for="first-name" class="required">First Name: </label>
+            <input type="text" name="first-name" id="first-name" autofocus required />
+
+            <label for="last-name" class="required">Last Name: </label>
+            <input type="text" name="last-name" id="last-name" required />
+
+            <label for="position-title">Title: </label>
+            <input type="text" name="position-title" id="position-title" pattern="(\w|\s|-){7,}" />
+
+            <label for="email" class="required">Email: </label>
+            <input type="email" name="email" id="email" placeholder="you@email.com" required />
+
+            <label for="phone">Phone number (123-456-7890): </label>
+            <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" />
+
+            <label for="business-name">Business Name: </label>
+            <input type="text" name="business-name" id="business-name" required />
+
+            <fieldset>
+                <legend>Membership level</legend>
+                <label class="radio-label">
+                    <input type="radio" name="status" value="nonprofit" />
+                    Non-profit
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="status" value="bronze" />
+                    Bronze
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="status" value="silver" />
+                    Silver
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="status" value="gold" />
+                    Gold
+                </label>
+            </fieldset>
+
+            <label for="business-description">Describe your business: </label>
+            <input type="text-area" name="business-description" id="business description" />
+
+            <!--PUT HIDDEN DATE INPUT HERE-->
+
+            <input id="submit" type="submit" value="Sign Up" />
+        </form>
     </main>
     <footer>
         <div id="footer-top">
-            <div id="footer-logo"><img src="images/chamberlogo.webp" alt="Footer logo" width="250" height="208"></div>
-            <div id="main-info"><h3>Cloud City Chamber of Commerce</h3>
-            <p class="address">Level 102, 1037 Williams Rd</p>
-            <p class="address">Cloud City, Bespin, Anoat sector K-18</p></div>
-            <div id="misc-info"><p>info@cloudcitycommerce.com</p>
-            <p>📍 Location Map</p></div>
+            <div id="footer-logo">
+                <img src="images/chamberlogo.webp" alt="Footer logo" width="250" height="208" />
+            </div>
+            <div id="main-info">
+                <h3>Cloud City Chamber of Commerce</h3>
+                <p class="address">Level 102, 1037 Williams Rd</p>
+                <p class="address">Cloud City, Bespin, Anoat sector K-18</p>
+            </div>
+            <div id="misc-info">
+                <p>info@cloudcitycommerce.com</p>
+                <p>📍 Location Map</p>
+            </div>
         </div>
-        <hr>
+        <hr />
         <div id="footer-bottom">
-            <p>&copy; <span id="copyrightyear"></span> Cloud City Chamber of Commerce</p>
+            <p>
+                &copy; <span id="copyrightyear"></span> Cloud City Chamber of Commerce
+            </p>
             <p class="separator">|</p>
             <p id="my-name">Colby Hale</p>
             <p class="separator">|</p>
@@ -63,6 +127,7 @@
             <p>Last modified: <span id="lastmod"></span></p>
         </div>
     </footer>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
