@@ -9,7 +9,7 @@
 @font-face 
 { 
 font-family: 'Aurebesh';  
-src: url("fonts/AUREBESH.OTF")format("otf"); 
+src: url("../fonts/AUREBESH.OTF") format("otf"); 
 }
 
 body {
@@ -413,6 +413,7 @@ p.spotlight-contact {
 form {
     max-width: 320px;
     padding: 1em;
+    margin: auto;
 }
 
 fieldset {
@@ -448,10 +449,6 @@ form input {
     margin-bottom: 1em;
     padding: 0.75rem;
     border-radius: 8px;
-}
-
-form #timestamp {
-    display: none;
 }
 
 form label.required::after {
@@ -490,7 +487,7 @@ input:invalid {
 }
 
 .credits {
-    font-family: 'Aurebesh', 'Orbitron', sans-serif;
+    font-family: 'Aurebesh', sans-serif;
 }
 
 /* Thank you page */
