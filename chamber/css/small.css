@@ -8,8 +8,8 @@
 
 @font-face 
 { 
-font-family: "Aurebesh";  
-src: url("/AUREBESH.OTF")format("otf"); 
+font-family: 'Aurebesh';  
+src: url("fonts/AUREBESH.OTF")format("otf"); 
 }
 
 body {
@@ -130,7 +130,7 @@ nav a {
 nav a:hover {
     background-color: black;
     color: white;
-    font-family: 'Aurebesh';
+    font-family: 'Aurebesh', 'Orbitron', sans-serif;
 }
 
 #todays-date {
@@ -482,7 +482,7 @@ input:invalid {
 #submit:hover {
     background-color: black;
     cursor: pointer;
-    font-family: 'Aurebesh';
+    font-family: 'Aurebesh', 'Orbitron', sans-serif;
 }
 
 #membership-levels {
@@ -490,7 +490,7 @@ input:invalid {
 }
 
 .credits {
-    font-family: 'Aurebesh';
+    font-family: 'Aurebesh', 'Orbitron', sans-serif;
 }
 
 /* Thank you page */

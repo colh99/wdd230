@@ -77,13 +77,17 @@
         display: block;
         padding: 1em 2em 1em 2em;
         position: absolute;
-        top: 55em;
+        top: 50em;
         left: 45em;
         right: 20em;
     }
 
     form {
         margin: 0 0 0 5em;
+    }
+
+    form input {
+        padding: 0.5rem;
     }
 
     /* Footer */
