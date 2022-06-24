@@ -8,7 +8,7 @@
     <meta name="author" content="Colby Hale" />
     <meta name="description"
         content="A project for WDD 230, Web Frontend Development I. The official website for the Cloud City Chamber of Commerce." />
-    <title>Cloud City Commerce</title>
+    <title>Join Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Work+Sans&display=swap" rel="stylesheet" />
@@ -45,12 +45,10 @@
         </nav>
         <div id="todays-date">Today, 1 January 1970</div>
     </header>
-    <div id="message-banner">
-        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-    </div>
     <main class="content-main">
         <h2>Join Us!</h2>
-        <p>Please fill out the form below. After it is successfully submitted, a representative will reach out to you.</p>
+        <p>Please fill out the form below. After it is successfully submitted, a representative will reach out to you.
+        </p>
 
         <form method="get" action="thankyou.html">
             <label for="first-name" class="required">First Name: </label>
@@ -94,10 +92,39 @@
             <label for="business-description">Describe your business: </label>
             <input type="text-area" name="business-description" id="business description" />
 
-            <!--PUT HIDDEN DATE INPUT HERE-->
+            <input type="datetime" name="timestamp" id="timestamp">
 
             <input id="submit" type="submit" value="Sign Up" />
         </form>
+
+        <section id="membership-levels" class="pop-out-box">
+            <h2>Membership Levels</h2>
+            <p><b>NP Membership</b> - No fee</p>
+            <ul>
+                <li>All Bronze perks</li>
+                <li>Yearly fundraising opportunities</li>
+                <li>Discounts from select vendors</li>
+            </ul>
+            <p><b>Bronze Membership</b> - 500 credits (<span class="credits">$</span>)</p>
+            <ul>
+                <li>Invitation to all Chamber events</li>
+                <li>Invitation to Chamber meetings</li>
+            </ul>
+            <p><b>Silver Membership</b> - 750 credits (<span class="credits">$</span>)</p>
+            <ul>
+                <li>All Bronze perks</li>
+                <li>Discounts from select vendors</li>
+                <li>Ad placement on Chamber Homepage</li>
+            </ul>
+            <p><b>Gold Membership</b> - 1,000 credits (<span class="credits">$</span>)</p>
+            <ul>
+                <li>All Bronze and Silver perks</li>
+                <li>Live access to local econommic report data</li>
+                <li>Priority ad placement on Chamber Homepage</li>
+                <li>Front row seats in Chamber meetings</li>
+                <li>First in line at all potlucks and banquets</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <div id="footer-top">

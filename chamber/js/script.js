@@ -20,6 +20,12 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
+// Input date and time as form input
+document.getElementById('submit').addEventListener('click', AppendDate());
+function AppendDate() {
+    document.getElementById('timestamp').value = Date.now();
+}
+
 // Sets the copyright year to the current year
 document.querySelector("#copyrightyear").textContent = todaysdate.getFullYear();
 
@@ -60,3 +66,5 @@ if ("IntersectionObserver" in window) {
         loadImages(img);
     });
 }
+
+// TO DO: Separate code for each page. Also, remove all Console log messages

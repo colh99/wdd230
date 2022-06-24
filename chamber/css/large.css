@@ -71,6 +71,21 @@
         width: 60%;
     }
 
+    /* Join Page */
+    
+    #membership-levels {
+        display: block;
+        padding: 1em 2em 1em 2em;
+        position: absolute;
+        top: 55em;
+        left: 45em;
+        right: 20em;
+    }
+
+    form {
+        margin: 0 0 0 5em;
+    }
+
     /* Footer */
 
     #footer-top {

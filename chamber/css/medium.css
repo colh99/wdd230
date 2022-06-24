@@ -134,6 +134,12 @@
         grid-column: 1/-1;
     }
 
+    /* Join Page Form */
+
+    form {
+        margin: auto;
+    }
+
     /* Footer */
 
     footer {

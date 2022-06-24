@@ -6,6 +6,12 @@
     line-height: 1.5em;
 }
 
+@font-face 
+{ 
+font-family: "Aurebesh";  
+src: url("/AUREBESH.OTF")format("otf"); 
+}
+
 body {
     min-height: 100vh;
     display: grid;
@@ -124,6 +130,7 @@ nav a {
 nav a:hover {
     background-color: black;
     color: white;
+    font-family: 'Aurebesh';
 }
 
 #todays-date {
@@ -405,7 +412,6 @@ p.spotlight-contact {
 
 form {
     max-width: 320px;
-    margin: auto;
     padding: 1em;
 }
 
@@ -444,6 +450,10 @@ form input {
     border-radius: 8px;
 }
 
+form #timestamp {
+    display: none;
+}
+
 form label.required::after {
     content: " *";
     color: red;
@@ -451,12 +461,8 @@ form label.required::after {
 
 input:invalid {
     box-shadow: 0 0 2px red;
-    border-left: 8px solid red;
-}
-
-
-input:valid {
-    border-left: 8px solid rgb(8, 94, 203);
+    border-left: 6px solid red;
+    color: red;
 }
 
 #submit {
@@ -476,6 +482,15 @@ input:valid {
 #submit:hover {
     background-color: black;
     cursor: pointer;
+    font-family: 'Aurebesh';
+}
+
+#membership-levels {
+    display: none;
+}
+
+.credits {
+    font-family: 'Aurebesh';
 }
 
 /* Thank you page */
