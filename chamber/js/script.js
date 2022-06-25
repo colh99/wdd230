@@ -20,12 +20,6 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
-// Input date and time as form input
-document.getElementById('submit').addEventListener('click', AppendDate());
-function AppendDate() {
-    document.getElementById('timestamp').value = Date.now();
-}
-
 // Sets the copyright year to the current year
 document.querySelector("#copyrightyear").textContent = todaysdate.getFullYear();
 
@@ -39,32 +33,3 @@ messageBanner = document.getElementById("message-banner");
 if (dayOfWeek == 1 || dayOfWeek == 2) {
     messageBanner.style.display = "block";
 }
-
-// LAZY LOADING
-let imagesToLoad = document.querySelectorAll("img[data-src]");
-const loadImages = (image) => {
-    image.setAttribute("src", image.getAttribute("data-src"));
-    image.onload = () => {
-        image.removeAttribute("data-src");
-    };
-};
-
-if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-        items.forEach((item) => {
-            if (item.isIntersecting) {
-                loadImages(item.target);
-                observer.unobserve(item.target);
-            }
-        });
-    });
-    imagesToLoad.forEach((img) => {
-        observer.observe(img);
-    });
-} else {
-    imagesToLoad.forEach((img) => {
-        loadImages(img);
-    });
-}
-
-// TO DO: Separate code for each page. Also, remove all Console log messages

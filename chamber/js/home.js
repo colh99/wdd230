@@ -1,3 +1,13 @@
+// Message Banner
+// Only display message banner on Monday or Tuesday
+dayOfWeek = todaysdate.getDay();
+messageBanner = document.getElementById("message-banner");
+
+if (dayOfWeek == 1 || dayOfWeek == 2) {
+    messageBanner.style.display = "block";
+}
+
+// Weather
 let temperature = document.getElementById('temperature').innerHTML;
 let windSpeed = document.getElementById('wind-speed').innerHTML;
 

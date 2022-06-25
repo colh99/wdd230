@@ -125,6 +125,23 @@ nav a {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
     border-top: 1px solid #4d4d4d;
+    min-width: fit-content;
+}
+
+nav #nav-discover {
+    min-width: 178px;
+}
+
+nav #nav-directory {
+    min-width: 195px;
+}
+
+nav #nav-join {
+    min-width: 113px;
+}
+
+nav #nav-contact {
+    min-width: 169px;
 }
 
 nav a:hover {
@@ -209,6 +226,7 @@ nav a:hover {
 
 #join-button:hover {
     background-color: black;
+    font-family: 'Aurebesh', 'Orbitron', 'sans-serif';
 }
 
 #join p {
@@ -265,7 +283,7 @@ p.spotlight-contact {
 #hero-join {
     font-size: 1.5em;
     text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', 'sans-serif';
     letter-spacing: 1px;
     position: absolute;
     bottom: 15px;
@@ -280,11 +298,12 @@ p.spotlight-contact {
     padding: 0.5em;
     box-shadow: 3px 3px 8px #ff8c00;
     text-align: center;
-    width: fit-content;
+    width: 338px;
 }
 
 #hero-join:hover {
     background-color: black;
+    font-family: 'Aurebesh', 'Orbitron', 'sans-serif';
 }
 
 #hero-image {
