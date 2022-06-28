@@ -322,10 +322,6 @@ p.spotlight-contact {
     text-align: center;
 }
 
-#weather-image {
-    display: inline;
-}
-
 #weather div p {
     display: inline;
     position: relative;
@@ -335,6 +331,13 @@ p.spotlight-contact {
 
 #weather div #weather-condition {
     font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+#weather-attribution {
+    font-size: 1em;
+    font-style: italic;
+    padding-top: 0.5em;
 }
 
 #weather hr {
