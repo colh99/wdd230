@@ -431,6 +431,32 @@ p.gallery-caption {
     margin: 0;
 }
 
+/* Directory Page */
+
+#directory-menu {
+    margin: auto;
+	text-align: center;
+}
+
+.directory-button {
+    margin: 2em 0.5em;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    background-color: #4d4d4d;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #ff8c00;
+    padding: 0.5em;
+    box-shadow: 3px 3px 8px #4d4d4d;
+}
+
+.directory-button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
 
 /* Directory Page Cards */
 #cards {
