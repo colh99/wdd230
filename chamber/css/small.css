@@ -459,12 +459,12 @@ p.gallery-caption {
 
 
 /* Directory Page Cards */
-#cards {
+#cards.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
 }
 
-#cards section.pop-out-box {
+#cards.grid section.pop-out-box {
     margin: 1em auto 2em auto;
     padding: 0.5em 0 0.5em 0;
     width: 21em;
@@ -472,7 +472,7 @@ p.gallery-caption {
     text-align: center;
 }
 
-#cards img {
+#cards.grid img {
     display: block;
     margin: auto;
 }
@@ -480,6 +480,22 @@ p.gallery-caption {
 #cards p {
     text-align: center;
     margin: 0;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: flex;
+	align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.list section img {
+    display: none;
 }
 
 /* Join Page Form */

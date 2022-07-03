@@ -49,4 +49,27 @@ function displayPartners(partner) {
     document.getElementById("cards").appendChild(card);
 }
 
+// Grid / List display buttons
 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.getElementById("cards");
+
+// Grid view
+gridbutton.addEventListener("click", showGrid);
+
+function showGrid() {
+	display.classList.add("grid");
+	display.classList.remove("list");
+};
+
+// List view
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
+// Default to grid view
+showGrid()
