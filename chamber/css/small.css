@@ -349,7 +349,7 @@ p.spotlight-contact {
 
 .content-main {
     background-color: #ffdfd8;
-    width: fit-content;
+    width: 100%;
     box-shadow: 5px 5px 8px #4d4d4d6b;
     margin: 1em auto 1em auto;
     padding: 1em;
@@ -425,9 +425,35 @@ p.spotlight-contact {
     margin-top: 1em;
 }
 
-.gallery-caption {
+p.gallery-caption {
     text-align: center;
     padding-bottom: 15px;
+    margin: 0;
+}
+
+
+/* Directory Page Cards */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+}
+
+#cards section.pop-out-box {
+    margin: 1em auto 2em auto;
+    padding: 0.5em 0 0.5em 0;
+    width: 21em;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.486);
+    text-align: center;
+}
+
+#cards img {
+    display: block;
+    margin: auto;
+}
+
+#cards p {
+    text-align: center;
+    margin: 0;
 }
 
 /* Join Page Form */

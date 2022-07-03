@@ -1,0 +1,67 @@
+{
+  "partners": [
+    {
+      "name": "Yarith Bespin Hotel",
+      "email": "stay@bespinhotel.com",
+      "website": "https://starwars.fandom.com/wiki/Yarith_Bespin/Legends",
+      "imageurl": "images/yarith_hotel.webp",
+      "level": "Gold"
+    },
+    {
+      "name": "Figg & Associates",
+      "email": "contact@fig.org",
+      "website": "https://starwars.fandom.com/wiki/Figg_%26_Associates",
+      "imageurl": "images/directory/figg.webp",
+      "level": "Gold"
+    },
+    {
+      "name": "Well-Done Bantha",
+      "email": "eat@wdbantha.com",
+      "website": "https://starwars.fandom.com/wiki/Well-Done_Bantha",
+      "imageurl": "images/steak.webp",
+      "level": "Gold"
+    },
+    {
+      "name": "Cloud City Miner's Guild",
+      "email": "ccmguild@holo.net",
+      "website": "https://starwars.fandom.com/wiki/Cloud_City_Miner%27s_Guild",
+      "imageurl": "images/directory/cc-miners-guild.webp",
+      "level": "Gold"
+    },
+    {
+      "name": "Incom Corporation",
+      "email": "contact@in.com",
+      "website": "https://starwars.fandom.com/wiki/Incom_Corporation/Legends",
+      "imageurl": "images/directory/incom.webp",
+      "level": "Silver"
+    },
+    {
+      "name": "Bespin Tours",
+      "email": "explore@holo.net",
+      "website": "https://starwars.fandom.com/wiki/Bespin_Tours",
+      "imageurl": "images/directory/bespin-tours.webp",
+      "level": "Silver"
+    },    
+    {
+      "name": "Bespin Direct",
+      "email": "bespin@holo.net",
+      "website": "https://starwars.fandom.com/wiki/Bespin_Direct",
+      "imageurl": "images/directory/bespin-direct.webp",
+      "level": "Silver"
+    },
+    {
+      "name": "Juri's Sabaac Parlor",
+      "email": "playsabacc@holo.net",
+      "website": "https://starwars.fandom.com/wiki/Juri%27s_Sabacc_Parlor",
+      "imageurl": "images/directory/juris.webp",
+      "level": "#CD7F32"
+    },
+    {
+      "name": "Crozo Industrial Products",
+      "email": "contact@crozoind.com",
+      "website": "https://starwars.fandom.com/wiki/Crozo_Industrial_Products/Legends",
+      "imageurl": "images/directory/crozo.webp",
+      "level": "#CD7F32"
+    }
+  ]
+}
