@@ -31,6 +31,7 @@ footer a {
     border-radius: 10px;
     text-shadow: none;
     font-size: 1.2rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .action-button:hover {
@@ -239,6 +240,72 @@ main p {
 
 .temple-card #address {
     margin: 1rem 0 0 0;
+}
+
+/* Reservations */
+
+/* Join Page Form */
+
+form {
+    max-width: 320px;
+    padding: 1em;
+    margin: auto;
+}
+
+form label {
+    margin-top: 2em;
+}
+
+form label, form input {
+    display: block;
+    width: 100%;
+}
+
+label input {
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+
+form input {
+    margin-bottom: 1em;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+form select {
+    margin-bottom: 1em;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+}
+
+form textarea {
+    font-size: 1.2rem;
+}
+
+form label.required::after {
+    content: " *";
+    color: red;
+}
+
+input:invalid {
+    box-shadow: 0 0 2px red;
+    border-top: 3px solid red;
+    border-left: 5px solid red;
+    color: red;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#successful-submit-message {
+    text-align: center;
+    margin: 1em 0 1em 0;
 }
 
 /* FOOTER */
