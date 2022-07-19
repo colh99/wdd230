@@ -46,12 +46,19 @@
             srcset="images/hero1500.webp 1500w,
                     images/hero1000.webp 1000w,
                     images/hero750.webp 750w,
-                    images/hero400.webp 400w">
+                    images/hero400.webp 400w" sizes="(max-width: 47.5rem) 100vw,
+                    50vw">
         </section>
 
         <div id="home-content" class="main-content cards">
             <section id="featured-temple" class="card">
                 <h2>Featured Temple</h2>
+            </section>
+            
+            <section id="weather" class="card">
+                <h2>Weather at Oklahoma City Temple</h2>
+                <p>Current Temperature: <span id="temperature"></span>°F</p>
+                <p id="weather-condition"></p>
             </section>
 
             <section id="contact-socials" class="card">
@@ -65,11 +72,7 @@
                 <a href="index.html"><img src="images/social-instagram.webp" alt="instagram logo"></a>
             </section>
 
-            <section id="weather" class="card">
-                <h2>Weather at Oklahoma City Temple</h2>
-                <p>Current Temperature: <span id="temperature"></span>°F</p>
-                <p id="weather-condition"></p>
-            </section>
+
         </div>
     
     </main>
