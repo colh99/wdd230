@@ -1,0 +1,57 @@
+{
+    "temples": [
+      {
+        "name": "Oklahoma City Oklahoma",
+        "phone": "(1) 405-373-2309",
+        "address": "12030 N Mustang Rd, Yukon, OK",
+        "clothingRental": "No",
+        "cafeteria": "No",
+        "patronHousing": "No",
+        "distributionCenterNearby": "No",
+        "dedicated": "30 July 2000, Re-dedicated 19 May 2019",
+        "website": "https://www.churchofjesuschrist.org/temples/details/oklahoma-city-oklahoma-temple?lang=eng",
+        "imageurl": "images/temples/okc-temple.webp"
+      },
+
+      {
+        "name": "Portland Oregon",
+        "phone": "(1) 503-639-7066",
+        "address": "13600 Kruse Oaks Blvd, Lake Oswego, OR",
+        "clothingRental": "Yes",
+        "cafeteria": "No",
+        "patronHousing": "No",
+        "distributionCenterNearby": "Yes",
+        "dedicated": "19 August 1989",
+        "website": "https://www.churchofjesuschrist.org/temples/details/portland-oregon-temple?lang=eng",
+        "imageurl": "images/temples/pdx-temple.webp"
+      },
+
+      {
+        "name": "Provo Utah",
+        "phone": "(1) 801-375-5775",
+        "address": "2200 Temple Hill Dr, Provo, UT",
+        "clothingRental": "Yes",
+        "cafeteria": "No",
+        "patronHousing": "No",
+        "distributionCenterNearby": "Yes",
+        "dedicated": "9 February 1972",
+        "website": "https://www.churchofjesuschrist.org/temples/details/provo-utah-temple?lang=eng",
+        "imageurl": "images/temples/pro-temple.webp"
+      },
+
+      {
+        "name": "Rexburg Idaho",
+        "phone": "(1) 208-656-0880",
+        "address": "750 S 2nd E, Rexburg, ID",
+        "clothingRental": "Yes",
+        "cafeteria": "No",
+        "patronHousing": "No",
+        "distributionCenterNearby": "Yes",
+        "dedicated": "10 February 2008",
+        "website": "https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple?lang=eng",
+        "imageurl": "images/temples/rex-temple.webp"
+      }
+  
+    ]
+  }
+  

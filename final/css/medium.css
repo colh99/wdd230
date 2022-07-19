@@ -1,0 +1,59 @@
+@media only screen and (min-width: 42rem) {
+
+    /* HEADER */
+
+    nav {
+        margin: auto;
+    }
+    
+    #hamburgerBtn {
+        display: none;
+    }
+
+    #header-logo {
+        justify-content: center;
+        margin: auto 0 auto 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        padding: 0;
+        margin: 1rem 0 1rem 0;
+        list-style-type: none;
+    }
+
+
+    nav a {
+        display: block;
+        margin: 0 1rem;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        min-width: fit-content;
+        border-bottom: 2px solid transparent;
+    }
+
+    #current-page {
+        text-decoration: none;
+        border-bottom: 1px solid #e5e5e5;
+    }    
+    
+    nav a:hover, #current-page:hover {
+        border-bottom: 2px solid white;
+    }
+
+    /* MAIN */
+
+    #hero-section {
+        font-size: 1.3rem;
+    }
+    
+    #hero-tagline {
+        display: inline;
+    }
+
+    #hero-button {
+        font-size: 1rem;
+        top: 300px;
+    }
+}
