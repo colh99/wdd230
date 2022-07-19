@@ -14,3 +14,7 @@ function toggleMenu() {
 
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
+
+
+// Sets the last modified to the current time and date
+document.querySelector("#lastmod").textContent = document.lastModified;
